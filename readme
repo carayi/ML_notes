@@ -1,6 +1,13 @@
 note records of tranditional machine learning
 
 #L4, gradient descent vs normal equation
-in normal equation, there is a normal formula for calculate theta if matrix is reversible. 
+1. in normal equation, there is a normal formula for calculate theta if matrix is reversible. 
 
 theta = np.linalg.inv(np.transpose(X)*X)*np.transpose(X)*y
+vs
+theta = np.linalg.pinv(Xt.dot(X)).dot(Xt).dot(y)
+
+2. np.linalg.inv vs np.linalg.pinv
+
+
+
